@@ -1,7 +1,62 @@
+:root{
+    
+    --gradient: linear-gradient(90deg,#845ec2,#d65db1,#ff6f91, #ff9671,#fcc75f,#f9f871);
+}
+
 .board{
     width: 500px;
     height: 500px;
     display: grid;
+    align-content: center;
+    border-style: outset;
 
 
+}
+
+
+
+body{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin:10px;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 25s infinite;
+    color: var(--gradient);
+    
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+  }
+
+.title{
+    display: flex;
+    justify-content: space-around;
+}
+
+.button{
+padding: 15px;
+}
+
+button{
+    border-radius: 15px;
+    border-style: ridge;
+    transition: all 0.1s ease;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+button:hover{
+    cursor: pointer;
+    border: solid black;
+
+}
+input{
+    width: 50px;
+    
 }
